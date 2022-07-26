@@ -139,4 +139,49 @@
     ![Class Hierarchy](/Pictures/polymorphism.png)
     - Primary examples of inheritance in Java are extending Classes and Implementing Interfaces.
 
-## String
+## Strings
+- Strings are "Strings/Groups of Characters"
+- Because words and sentences are so often used in programming, Java defined a String Class with partiucalr functionality to support their use in development
+- **STRINGS ARE OBJECTS NOT PRIMITVES**
+- There is an entire String Class, which we make String objects from
+- Strings are **immutable**
+    - Once a String object is created, it **CANNOT** be changed. 
+    - What *can* be done is to use String methods to create a new String in memoery changing the original String's value, and then finally assigning a new String to that changed value
+- The String Class has the **final** non-access modifer, which means you cannoy create subclasses of String
+- Strings Override the .equals() method from the Object class to test the value of the characters contained in that String.
+    - We cannot use **==** to compare strings because it compares the value of primitives or the memory address of objects
+    - However, .equals() will compare the actual content of the Strings.
+        - So we use .equals to compare Strings and other objects
+        - As a note, .equalsIgnoreCase() exists :)
+- Strings can be constructed in a specail way in Java
+    - Putting characters between "two double quotes" will create a String object known as a **String Literal**
+    - These String Literals are stored in a particular place in heap memory called the String Pool
+- A note on the String Pool:
+    - The String Pool is located in Java's Heap memory where String literals are stored
+    - Only one String object will be created for each unique String Literal in the source code
+        - This means that if variaous variables use the same String Literals, they will allpoint to the same object in the String Pool
+        - This is why it is **necessary** for Strings to be immutable
+    - However, Strings created using the **new** keyword will not be stored in the String Pool. They will get thrown into the general heap, and get their own unique memory address
+- Notable String Methods:
+    - **concat()**: This joins two Strings together
+    - **length()**: This returns an int with the length of the String
+    - **toLowerCase()** / **toUpperCase()**: Self explanitory
+- Here is a link to anything and everything you could really want to know about Strings:
+    - https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+    - Really good resource to see all the different String Methods
+
+## StringBuilder and StringBuffer
+- These are **mutable** String-like objects
+- They are Classes very similar to the String class and they have built-in constructors that convery easily between themselves and Strings
+- Two Major Differences between StringBuffer and StringBuilder:
+    - StingBuffer is synchoronized, which means that you can use it in multithreaded environments
+        - It's thread safe
+    - StringBuilder is newer and faster
+        - We tend to use StringBuilder unless we need to use StringBuffer
+- Important Methods:
+    - append(): This adds chars to the **end** of the current value
+    - insert(): This addes chars to a specific location based on the current value's index
+    - reverse(): We saw Adam cheat with this!
+- Here is a helpful chart:
+    - ![Strings](/Pictures/Strings.jpg)
+    
