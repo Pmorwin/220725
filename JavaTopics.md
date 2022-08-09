@@ -187,4 +187,40 @@
     - reverse(): We saw Adam cheat with this!
 - Here is a helpful chart:
     - ![Strings](/Pictures/Strings.jpg)
+
+## Exceptions
+- Objects that hold information about failures in code
+    - Message about what went wrong
+    - As well as a stack trace which says where the exception occurred
+
+## Checked Exceptions
+- Require that your code hangles them in try catch blocks in order to compile
+    - AKA: Compile time exceptions
+    - THEY DO NOT OCCUR AT COMPILE TIME
+    - Your code will not comile unless they are handled
+
+## Runtime Exceptions
+- Not required to be handled    
     
+## Gradle
+- Build automation and dependency management tool
+- Realistically almost any application we write requires Java libraries and code written by someone else
+    - Trying to manually incorporate these external libraries in your application is very tedious
+- Gradle is written in a programming language called Groovy
+    - It is not a popular programming language
+    - But it does have some really cool syntax
+- The main file for any gradle project is the ***build.gradle***
+    - It is in here where we will include any dependencies and isntruction on how to build the project
+- src
+    - Main
+        -Java
+            - This is where we put our Java application code
+        - Resources
+            - Put any files that your program needs that is *not* Java
+    - Test
+        -Java
+            - This is where we put our Java testing code
+        - Resources
+            - Put any files that your program needs that is *not* Java
+
+

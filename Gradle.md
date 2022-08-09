@@ -1,0 +1,20 @@
+## Gradle
+- Build automation and dependency management tool
+- Realistically almost any application we write requires Java libraries and code written by someone else
+    - Trying to manually incorporate these external libraries in your application is very tedious
+- Gradle is written in a programming language called Groovy
+    - It is not a popular programming language
+    - But it does have some really cool syntax
+- The main file for any gradle project is the ***build.gradle***
+    - It is in here where we will include any dependencies and isntruction on how to build the project
+- src
+    - Main
+        -Java
+            - This is where we put our Java application code
+        - Resources
+            - Put any files that your program needs that is *not* Java
+    - Test
+        -Java
+            - This is where we put our Java testing code
+        - Resources
+            - Put any files that your program needs that is *not* Java
