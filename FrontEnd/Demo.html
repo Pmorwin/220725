@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida State Seminoles Fan Page   </title>
+    <style>
+        p{color:white;background-color:rgb(120, 47, 64); font-family: 'Indie Flower', cursive;}
+        li{color: rebeccapurple;}
+
+
+        th.champion{color: rgb(226, 43, 98);}
+        td.champion{color: rgb(154, 47, 255);}      
+            
+            .container {
+  display: grid; 
+  grid-template-columns: 0.6fr 1.2fr 0.9fr 1.1fr 1fr; 
+  grid-template-rows: 0.5fr 0.6fr 1.5fr 0.4fr 1.6fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+         ". . . . ."
+    ". intro intro intro ."
+    ". heismanList . champtionTable ."
+    ". . . . ."
+    ". celebrate celebrate . ."; 
+}
+.intro { grid-area: intro; }
+.heismanList { grid-area: heismanList; }
+.champtionTable { grid-area: champtionTable; }
+.celebrate { grid-area: celebrate; }
+    </style>
+            <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <!-- contain all the the content on the webpaage -->
+     <body>
+        <marquee behavior="" direction="">Gators Suck!</marquee>
+
+        <div class="container">
+            <div class="intro">
+                <h1 style="color: rgb(120, 47, 64);">Florida State Fan Page</h1>
+                <!-- inline styling -->
+        
+                <h3>About Forida State</h3>
+                <p>
+                   I honestly dont know much about them. I don't really do the whole sports thing. But I know Adam likes the Gators, so I Googled their biggest Rival. So honestly, I think they are the 
+                    <b>BEST TEAM</b>.
+                </p>
+
+            </div>
+            <div class="heismanList">
+                <h4 id="heismanTitle">Heisman Trophy Winners</h4>
+                <ul>
+                    <li>Charlie Ward</li>
+                    <li>Chris Weinke</li>
+                    <li>Jameis Winston</li>
+                </ul>
+            </div>
+            <div class="champtionTable">
+                <table >
+                    <thead >
+                        <th class="champion" >Year</th>
+                    </thead>
+                    <tbody>
+                        <tr><td class="champion">1993</td></tr>
+                        <tr><td class="champion">2000</td></tr>
+                        <tr><td class="champion">2013</td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="celebrate">
+                <img style="width: 300px; height: 300px; "
+                src="https://images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https%3A%2F%2Fchopchat.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F461080379-850x560.jpeg" 
+                alt="Florida State Winning">
+        
+            </div>
+        </div>
+
+</body>
+</html>
